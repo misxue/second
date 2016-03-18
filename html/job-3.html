@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="Shortcut Icon" href="http://ctc.qzonestyle.gtimg.cn/aoi/img/logo/favicon.ico?max_age=31536000" type="image/x-icon" />
+<title>实战页面布局</title>
+<style>
+   #div{
+	   
+	   }
+   #container{
+	height:720px;/*如果这里不设高度也可以，子div的高度会将其撑起，但如没有子div就必须设置宽度和高度了，块才能显示*/
+	width:1002px;
+	background:gray;
+	}
+	#header{
+		height:120px;
+		background:orange;
+	}
+	#main{
+		height:600px;/*如果这里注释掉footer那块会不能显示，因为会默认高度充满整个高度*/
+		background:gree;/*gree绿色属性会被覆盖掉*/
+		}
+		#lside{
+			float:left;
+			height:580px;
+			width:680px;/*子div必须设宽度才能显示*/
+			background:pink;
+			margin:10px 5px 10px 10px;
+			}
+			.four{
+				float:left;
+				width:325px;
+				height:275px;
+				background:black;
+				margin:10px 10px 5px 5px;
+				}
+		#rside{
+			float:left;
+			height:580px;
+			width:287px;
+			background:red;
+			margin:10px 10px 10px 5px;
+			}	
+	#footer{
+		height:120px;
+		background:blue;
+		}	
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="header"></div>
+  <div id="main">
+     <div id="lside">
+        <div class="four"></div>
+        <div class="four"></div>
+        <div class="four"></div>
+        <div class="four"></div>
+     </div>
+      <div id="rside"></div>
+  </div>
+  <div id="footer"></div>
+</div>
+</body>
+</html>
+
